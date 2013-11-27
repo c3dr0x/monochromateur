@@ -16,22 +16,37 @@
 
 QT_BEGIN_NAMESPACE
 
-namespace Monochromateur {
-
-class MainUi
+namespace Monochromateur 
 {
-public:
-    QMenuBar *menuBar;
-    QToolBar *mainToolBar;
-    QWidget *centralWidget;
-    QStatusBar *statusBar;
-	QMdiArea *mdiArea;
+	// =================================================================================
+	//	Class "MainUi"
+	//  Description :	classe reprsentant l'interface de l'application.
+	//  ================================================================================
+	class MainUi
+	{
+		public:
+			QMenuBar *menuBar;
+			QToolBar *mainToolBar;
+			QWidget *centralWidget;
+			QStatusBar *statusBar;
+			QMdiArea *mdiArea;
 
-    void setupUi(QMainWindow *MonochromateurClass);
+			//	==================================================================================
+			//	Méthode "setupUi"	
+			//  Paramètre "QMainWindow : classe principal du projet."	
+			//	Description :	Permet de créer l'affichage principal du projet,	
+			//					ajout et positionnement des différents composants.	
+			//	==================================================================================
+			void setupUi(QMainWindow *MonochromateurClass);
 
-    void retranslateUi(QMainWindow *MonochromateurClass);
+			//	==================================================================================
+			//	Méthode "retranslateUi"	
+			//  Paramètre "QMainWindow : classe principal du projet."	
+			//	Description :	Permet de traduire le nom du projet pour son affichage.
+			//	==================================================================================
+			void retranslateUi(QMainWindow *MonochromateurClass);
 
-};
+	};
 
 } // Namespace Monochromateur
 
